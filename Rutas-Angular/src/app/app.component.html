@@ -2,10 +2,10 @@
 <div class="container">
   <h1>Contenido</h1>
   <div class="row">
-    <div class="col-sm-6" style="background-color: deepskyblue">
+    <div class="col-sm-3" style="background-color: deepskyblue">
       <ul>
         <li>
-          <a routerLink="/inicio">
+          <a [routerLink]="">
             <h3>Inicio</h3>
           </a>
         </li>
@@ -20,7 +20,7 @@
       <button class="btn btn-success"
               (click)="irAFAQ()">FAQ</button>
     </div>
-    <div class="col-sm-6" style="background-color: greenyellow">
+    <div class="col-sm-9" style="background-color: greenyellow">
       <router-outlet></router-outlet>
     </div>
 
