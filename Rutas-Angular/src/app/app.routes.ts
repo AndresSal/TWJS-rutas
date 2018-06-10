@@ -1,4 +1,6 @@
 import {Router, Routes} from '@angular/router';
+import {RutaInicioComponent} from './misComponentes/ruta-inicio/ruta-inicio.component';
+import {RutaNoEncontradaComponent} from './misComponentes/ruta-no-encontrada/ruta-no-encontrada.component';
 
 export const RUTAS_APP: Routes = [
   {
@@ -7,7 +9,11 @@ export const RUTAS_APP: Routes = [
   },
   {
     path: '',
-    redirectTo: 'inicio',
+    redirectTo: '/inicio',
     pathMatch: 'full'
+  },
+  {
+    path: '**',
+    component: RutaNoEncontradaComponent
   }
 ];
