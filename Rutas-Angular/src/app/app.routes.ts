@@ -9,7 +9,7 @@ export const RUTAS_APP: Routes = [
   {
     path: 'inicio/hola/como/estas',
     component: RutaInicioComponent,
-    children:[
+    children: [
       {
         path: 'usuario',
         component: RutaIniUsuarioComponent
@@ -17,6 +17,11 @@ export const RUTAS_APP: Routes = [
       {
         path: 'permisos',
         component: RutaIniPermisosComponent
+      },
+      {
+        path: '',
+        redirectTo: 'usuario',
+        pathMatch: 'full'
       }
     ]
   },
