@@ -2,8 +2,21 @@
 <div class="container">
   <h1>Contenido</h1>
   <div class="row">
-    <div class="col-sm-6" style="background-color: blue"></div>
-    <div class="col-sm-6" style="background-color: red"></div>
+    <div class="col-sm-6" style="background-color: deepskyblue">
+      <ul>
+        <li>
+          <a routerLink="/inicio">
+            <h3>Inicio</h3>
+          </a>
+        </li>
+        <li>
+          <a routerLink="/faq">
+            <h3>FAQ</h3>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-sm-6" style="background-color: greenyellow"></div>
 
       <router-outlet></router-outlet>
   </div>

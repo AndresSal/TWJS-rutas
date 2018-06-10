@@ -6,12 +6,14 @@ import { RutaInicioComponent } from './misComponentes/ruta-inicio/ruta-inicio.co
 import { RutaNoEncontradaComponent } from './misComponentes/ruta-no-encontrada/ruta-no-encontrada.component';
 import {RouterModule} from '@angular/router';
 import {RUTAS_APP} from './app.routes';
+import { RutaFAQComponent } from './misComponentes/ruta-faq/ruta-faq.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RutaInicioComponent,
-    RutaNoEncontradaComponent
+    RutaNoEncontradaComponent,
+    RutaFAQComponent
   ],
   imports: [
     BrowserModule,
