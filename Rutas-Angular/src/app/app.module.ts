@@ -2,10 +2,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { RutaInicioComponent } from './misComponentes/ruta-inicio/ruta-inicio.component';
+import { RutaNoEncontradaComponent } from './misComponentes/ruta-no-encontrada/ruta-no-encontrada.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    RutaInicioComponent,
+    RutaNoEncontradaComponent
   ],
   imports: [
     BrowserModule
